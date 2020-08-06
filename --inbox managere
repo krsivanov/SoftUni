@@ -1,0 +1,51 @@
+emails_data = {}
+counter_of_users = 0
+
+while True:
+    user_input = input()
+
+    if user_input == "Statistics":
+        break
+
+    args = user_input.split("->")
+    command = args[0]
+    username = args[1]
+
+    if command == 'Add':
+        if username in emails_data:
+            print(f"{username} is already registered")
+            continue
+
+        emails_data[username] = []
+        counter_of_users += 1
+
+    elif command == "Send":
+        if username not in emails_data:
+            emails_data[username] = []
+            counter_of_users += 1
+
+        email = args[2]
+        emails_data[username].append(email)
+
+    elif command == "Delete":
+        if username not in emails_data:
+            print(f"{username} not found!")
+            continue
+
+        emails_data.pop(username)
+
+print(emails_data)
+print(f'Users count: {counter_of_users}')
+sorted_emails = sorted(emails_data, key= lambda k: (len(emails_data[k]), emails_data))
+print(sorted_emails)
+
+# sorted_likes = dict(sorted(likes.items(), key=lambda u: (-u[1], u[0])))
+# for username, count_likes in sorted_likes.items():
+#     count_comments = comments[username]
+#     print(f'{username}: {count_likes + count_comments}')
+
+# >> d = {"one": [(1,3),(1,4)], "two": [(1,2),(1,2),(1,3)], "three": [(1,1)]}
+# >>> for k in sorted(d, key=lambda k: len(d[k]), reverse=True):
+#         print k,
+#
+
