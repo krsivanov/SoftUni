@@ -8,8 +8,8 @@ def reverse_string(text):
     ch = st.pop()
     reversed_text_ch.append(ch)
   
-  return ' '.join(reversed_text_ch)
+  return ''.join(reversed_text_ch)
 
 
-string = list(input())
+string = input()
 print(reverse_string(string))
