@@ -1,3 +1,2 @@
 # SoftUni
-Basic
-add. 
+Software University Python Developer courses
