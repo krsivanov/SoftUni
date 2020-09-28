@@ -1,3 +1,6 @@
+BOARD_SIZE = 3
+
+
 class Player:
     def __init__(self, name, mark):
         self.name = name
@@ -31,7 +34,6 @@ def setup_player(mark = None):
     return Player(name, mark)
 
 def setup():
-    BOARD_SIZE = 3
     player_one = setup_player()
     player_two = setup_player("0" if player_one.mark == "X" else "0")
     board = setup_board(BOARD_SIZE)
@@ -46,16 +48,34 @@ def print_welcome(player):
     print("| 7 | 8 | 9 |")
     print(f"{player.name} starts first!")
 
-def choose_position(board,player):
+def get_position(player):
     position = int(input(f"{player.name} chooses a free position[1-9]: "))
-    
+    row = (position - 1)// BOARD_SIZE
+    column = (position -1) % BOARD_SIZE
+
+    return (row,column)
+
+def place_mark(board,player):
+    (row, column) = get_position(player)
+    board[row][column] = player.mark
+
+# def all_single_value(ll,value):
+#     pass
+
+# def check_game_over(board, player):
+#     row_checks = [all_single_value(row, player.mark) for row in board]
+
+def print_game_over(board,current_player):
+    print_board(board)
+    print(f'{player.name} won!')
 
 def game_loop(board, players):
     current_player, next_player = players
     while True:
-        choose_position(board,current_player)
-
-
+        place_mark(board,current_player)
+        if check_game_over(board,current_player):
+            print_game_over(board, current_player)
+            break
         current_player, next_player = next_player, current_player
 
 
