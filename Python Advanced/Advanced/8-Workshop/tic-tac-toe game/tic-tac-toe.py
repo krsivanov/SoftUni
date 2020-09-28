@@ -46,10 +46,18 @@ def print_welcome(player):
     print("| 7 | 8 | 9 |")
     print(f"{player.name} starts first!")
 
+def choose_position(board,player):
+    position = int(input(f"{player.name} chooses a free position[1-9]: "))
+    
 
-def game_loop():
+def game_loop(board, players):
+    current_player, next_player = players
     while True:
-        pass
+        choose_position(board,current_player)
+
+
+        current_player, next_player = next_player, current_player
+
 
 def start_game():
     (board, *players) = setup()
