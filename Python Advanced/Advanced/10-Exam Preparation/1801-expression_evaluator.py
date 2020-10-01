@@ -4,17 +4,45 @@ from math import floor
 expression = deque(input().split())
 saved_numbers = []
 
+# with for loop
+
 while True:
     current_element = expression.popleft()
 
-    if current_element in '-+/*':
-        result = floor(eval(current_element.join(saved_numbers)))
-        expression.appendleft(str(result))
+    if current_element in "-+/*":
+        result = int(saved_numbers[0])
+        for number in saved_numbers[1:]:
+            if current_element == "-":
+                result -= int(number)
+            elif current_element == "+":
+                result += int(number)
+            elif current_element == "/":
+                result /= int(number)
+            elif current_element == "*":
+                result *= int(number)
+
+        expression.appendleft(str(floor(result)))
         saved_numbers = []
+
         if len(expression) == 1:
             break
 
     else:
         saved_numbers.append(current_element)
+
+# with eval()
+
+# while True:
+#     current_element = expression.popleft()
+#
+#     if current_element in '-+/*':
+#         result = floor(eval(current_element.join(saved_numbers)))
+#         expression.appendleft(str(result))
+#         saved_numbers = []
+#         if len(expression) == 1:
+#             break
+#
+#     else:
+#         saved_numbers.append(current_element)
 
 print(expression[0])
