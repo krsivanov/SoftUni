@@ -10,6 +10,17 @@ while boxes and magics:
     box = boxes.pop()
     magic = magics.popleft()
 
+    if box==0 and magic == 0:
+        continue
+    
+    if box == 0: 
+        magics.appendleft(magic)
+        continue
+    
+    if magic == 0:
+        boxes.append(box)
+        continue
+
     total = box * magic
 
     if total in toys:
@@ -20,4 +31,19 @@ while boxes and magics:
         summed = box + magic
         boxes.append(summed)
     
-    elif 
+    elif total>0:
+        boxes.append(box+15)
+
+if (crafted["Doll"] and crafted["Wooden train"]) or (crafted["Teddy bear"] and crafted["Bicycle"]):
+    print("The presents are crafted! Merry Christmas!")
+else:
+    print("No presents this Christmas!")
+
+if boxes:
+    print(f"Materials left: {', '.join([str(x) for x in reversed(boxes)])}")
+if magics:
+    print(f"Magic left: {', '.join([str(x) for x in magics])}")
+
+for (item, quantity) in sorted(crafted.items()):
+    if quantity:
+        print(f"{item}: {quantity}")
