@@ -2,5 +2,5 @@ https://softuni.bg/trainings/2841/python-oop-june-2020
 
 
 
-https://softuni.bg/trainings/resources/video/51549/video-14-july-2020-isen-ivanova-python-oop-june-2020/2841
-3:15:38
+https://softuni.bg/trainings/resources/video/51605/video-16-july-2020-doncho-minkov-python-oop-june-2020/2841
+0.0.0
