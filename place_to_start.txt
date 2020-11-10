@@ -3,3 +3,5 @@ https://softuni.bg/trainings/2841/python-oop-june-2020
 
 
 https://softuni.bg/trainings/resources/video/51703/video-21-july-2020-isen-ivanova-python-oop-june-2020/2841
+
+1.46.44
