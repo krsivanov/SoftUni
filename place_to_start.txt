@@ -1,6 +1,1 @@
 https://softuni.bg/trainings/2841/python-oop-june-2020
-
-https://softuni.bg/trainings/resources/video/52030/video-03-august-2020-doncho-minkov-python-oop-june-2020/2841
-
-https://softuni.bg/trainings/resources/officedocument/51981/design-patterns-lab-python-oop-june-2020/2841
-https://softuni.bg/trainings/resources/officedocument/51980/design-patterns-pptx-python-oop-june-2020/2841
