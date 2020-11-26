@@ -1,6 +1,6 @@
 https://softuni.bg/trainings/2841/python-oop-june-2020
 
 https://softuni.bg/trainings/resources/video/52070/video-06-august-2020-doncho-minkov-python-oop-june-2020/2841
-
+0.38.05
 https://softuni.bg/trainings/resources/officedocument/52016/workshop-problem-description-python-oop-june-2020/2841
 https://pastebin.com/5i7SiXkA
