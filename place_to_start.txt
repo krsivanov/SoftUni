@@ -1,4 +1,3 @@
 https://softuni.bg/trainings/2841/python-oop-june-2020
 
-https://softuni.bg/trainings/resources/video/52094/video-07-august-2020-ines-ivanova-python-oop-june-2020/2841
-2.08.35
+https://softuni.bg/trainings/resources/video/52121/video-10-august-2020-ines-ivanova-python-oop-june-2020/2841
