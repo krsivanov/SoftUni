@@ -1,5 +1,7 @@
 https://softuni.bg/trainings/3133/js-fundamentals-september-2020
 
+
+https://jsfiddle.net/
 -----------------------------------------------------------
 https://softuni.bg/trainings/2832/js-fundamentals-may-2020
 -----------------------------------------------------------
