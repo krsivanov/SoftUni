@@ -1,7 +1,3 @@
 https://softuni.bg/trainings/3068/programming-basics-with-javascript-october-2020
 
 
-
-https://softuni.bg/trainings/resources/video/54348/video-04-october-2020-kiril-kirilov-programming-basics-with-javascript-october-2020/3068
-0.33.24
-https://judge.softuni.bg/Contests/Compete/Index/2400#0
