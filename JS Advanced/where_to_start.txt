@@ -1,3 +1,12 @@
 https://softuni.bg/trainings/2286/html-css-mini-course#lesson-10930
 
-https://softuni.bg/trainings/2838/js-advanced-may-2020
+-------------------------------------------------------------------
+https://softuni.bg/trainings/3011/js-advanced-september-2020
+--------------------------------------------------------------------
+
+https://softuni.bg/trainings/resources/video/52812/video-14-september-2020-ivaylo-papazov-js-advanced-september-2020/3011
+
+
+https://judge.softuni.bg/Contests/Practice/Index/1795#0
+https://softuni.bg/trainings/resources/officedocument/52674/lab-js-advanced-september-2020/3011
+https://softuni.bg/trainings/resources/officedocument/52673/presentation-js-advanced-september-2020/3011
