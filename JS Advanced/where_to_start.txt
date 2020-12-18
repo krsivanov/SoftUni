@@ -5,7 +5,7 @@ https://softuni.bg/trainings/3011/js-advanced-september-2020
 --------------------------------------------------------------------
 
 https://softuni.bg/trainings/resources/video/52875/video-15-september-2020-konstantin-mitev-js-advanced-september-2020/3011
-0.36.58
+0.50.23
 
 https://judge.softuni.bg/Contests/Practice/Index/1796#0
 https://softuni.bg/trainings/resources/officedocument/52675/exercises-js-advanced-september-2020/3011
