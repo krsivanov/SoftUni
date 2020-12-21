@@ -14,3 +14,4 @@ https://softuni.bg/trainings/resources/officedocument/52676/presentation-js-adva
 
 ALT+SHIFT+F - format code in VS code
 VS Extension : bracket pair colorizer, auto rename tag, es lint
+CTRL + ,  opens settings -> tab completion - on
