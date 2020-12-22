@@ -16,3 +16,4 @@ ALT+SHIFT+F - format code in VS code
 VS Extension : bracket pair colorizer, auto rename tag, es lint
 CTRL + ,  opens settings -> tab completion - on
 CTRL + SHIFT + SPACE вътре във функцията, показва какво особеностите й.
+CTRL + D - markira promenliva
