@@ -1,15 +1,19 @@
 https://softuni.bg/trainings/2286/html-css-mini-course#lesson-10930
-9/24
+1/4
+
+https://softuni.bg/trainings/resources/video/36939/video-%D0%B0%D0%BD%D1%82%D0%BE%D0%BD%D0%B8%D1%8F-%D0%B0%D1%82%D0%B0%D0%BD%D0%B0%D1%81%D0%BE%D0%B2%D0%B0-html-css-mini-course/2286
 -------------------------------------------------------------------
 https://softuni.bg/trainings/3011/js-advanced-september-2020
+
+10/24
 --------------------------------------------------------------------
 
-https://softuni.bg/trainings/resources/video/54114/video-25-september-2020-konstantin-mitev-js-advanced-september-2020/3011
-2.18.18
+https://softuni.bg/trainings/resources/video/54199/video-28-september-2020-ivaylo-papazov-js-advanced-september-2020/3011
+0.00.00
 
-https://judge.softuni.bg/Contests/Practice/Index/2371#0
-https://softuni.bg/trainings/resources/officedocument/52681/exercises-js-advanced-september-2020/3011
-https://softuni.bg/trainings/resources/officedocument/52679/presentation-js-advanced-september-2020/3011
+https://judge.softuni.bg/Contests/Practice/Index/1801#0
+https://softuni.bg/trainings/resources/officedocument/52684/lab-js-advanced-september-2020/3011
+https://softuni.bg/trainings/resources/officedocument/52683/presentation-js-advanced-september-2020/3011
 
 
 ALT+SHIFT+F - format code in VS code
