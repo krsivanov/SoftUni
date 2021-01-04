@@ -12,13 +12,21 @@ function solve(input){
             result[systemName][component] = []
         }
 
-        result[systemName][component].push[subComponnent];
+        result[systemName][component].push(subComponnent);
     })
     Object.entries(result).sort((curr,next) => {
-        return next[1].length - curr[1].length;
-    }).forEach(e => {
-        console.log(e[0])
-    })
+        return Object.entries(next[1]).length - Object.entries(curr[1]).length || curr[0].localeCompare(next[0]);
+    }).forEach(([system, components]) => {
+        console.log(system);
+        Object.entries(components).sort((curr, next) => {
+            return next[1].length - curr[1].length;
+        }).forEach(([component, subComponnents]) => {
+            console.log(`|||${component}`);
+            subComponnents.forEach(sub => {
+                 console.log(`||||||${sub}`);
+            })
+        })
+    }) 
 }
 
 
@@ -35,4 +43,3 @@ solve(['SULS | Main Site | Home Page',
 'Lambda | CoreC | C4',
 'Indice | Session | Default Storage',
 'Indice | Session | Default Security']);
-  
