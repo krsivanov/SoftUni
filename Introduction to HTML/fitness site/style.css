@@ -26,4 +26,27 @@ nav ul li a{
     color: orange;
     text-decoration: none;
 }
- 
+
+main section:nth-child(1){
+    margin-top: 3rem;
+    background-image: url("../fitness_site/Images/picture.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 11rem 15rem;
+}
+
+main section:nth-child(1) h1 {
+    color: white;
+}
+main section:nth-child(1) span {
+    color: orange;
+}
+
+main section:nth-child(1) button {
+    background: orange;
+    border: none;
+    color: white;
+    font-size: 22px;
+    padding: 12px;
+    font-weight: bold;
+}
