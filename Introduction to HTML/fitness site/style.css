@@ -6,7 +6,7 @@ body {
 }
 header > p {
     float: left;
-    color: orange;
+    color: #f9690e;
 }
 nav {
     text-align: right;
@@ -23,13 +23,13 @@ nav ul li {
 }
 
 nav ul li a{
-    color: orange;
+    color: #f9690e;
     text-decoration: none;
 }
 
 main section:nth-child(1){
     margin-top: 3rem;
-    background-image: url("../fitness_site/Images/picture.jpg");
+    background-image: url('../Fitness\ Site/Images/picture.jpg');
     background-size: cover;
     background-position: center;
     padding: 11rem 15rem;
@@ -39,14 +39,40 @@ main section:nth-child(1) h1 {
     color: white;
 }
 main section:nth-child(1) span {
-    color: orange;
+    color: #f9690e;
 }
 
 main section:nth-child(1) button {
-    background: orange;
+    background: #f9690e;
     border: none;
     color: white;
     font-size: 22px;
     padding: 12px;
     font-weight: bold;
+}
+
+
+main section:nth-child(2)  article{
+    background: #f9690e;
+    color: white;
+    width: 30%;
+    display: inline-block;
+    padding: 17px;
+}
+main section:nth-child(2) article h3{
+    text-align: center;
+}
+
+footer article {
+    width: 49%;
+    display: inline-block;
+}
+
+footer article:nth-child(2){
+    text-align: right;
+}
+
+footer article a{
+    text-decoration: none;
+    padding: 10px;
 }
