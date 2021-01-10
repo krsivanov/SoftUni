@@ -7,7 +7,7 @@ https://softuni.bg/trainings/3011/js-advanced-september-2020
 --------------------------------------------------------------------
 
 https://softuni.bg/trainings/resources/video/54199/video-28-september-2020-ivaylo-papazov-js-advanced-september-2020/3011
-0.51.16
+2.43.12
 
 https://judge.softuni.bg/Contests/Practice/Index/1801#0
 https://softuni.bg/trainings/resources/officedocument/52684/lab-js-advanced-september-2020/3011
