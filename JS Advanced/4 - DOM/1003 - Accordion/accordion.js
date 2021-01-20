@@ -7,6 +7,6 @@ function toggle() {
 
     } else {
         btn.textContent = 'More';
-        info.style.display = 'None';
+        info.style.display = 'none';
     }
 }
