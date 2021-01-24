@@ -9,7 +9,7 @@ https://discord.com/channels/796464328391393311/798168773605064774
 
 
 https://softuni.bg/trainings/resources/video/54305/video-01-october-2020-ivaylo-papazov-js-advanced-september-2020/3011
-0.10.45
+1.12.57
 
 https://judge.softuni.bg/Contests/Practice/Index/1549#0
 https://softuni.bg/trainings/resources/officedocument/52689/lab-js-advanced-september-2020/3011
