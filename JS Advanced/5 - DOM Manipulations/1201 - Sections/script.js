@@ -11,7 +11,7 @@ function create(words) {
    }
    
    content.addEventListener('click', function (e){
-      if(e.target.tagName=== 'DIV' || e.target.tagName==='P'){
+      if(e.target !== e.currentTarget){
          const p = e.target.children[0] || e.target;
          const isVisible = p.style.display=== 'block';
          p.style.display = isVisible ? 'none' : 'block';
