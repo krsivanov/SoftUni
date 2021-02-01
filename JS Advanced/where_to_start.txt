@@ -8,12 +8,12 @@ https://softuni.bg/trainings/3011/js-advanced-september-2020
 https://discord.com/channels/796464328391393311/798168773605064774
 
 
-https://softuni.bg/trainings/resources/video/57407/video-26-january-2021-mihaela-petrova-js-advanced-january-2021/3217
+https://softuni.bg/trainings/resources/video/57445/video-28-january-2021-viktor-kostadinov-js-advanced-january-2021/3217
 2.04.36
 
-https://judge.softuni.bg/Contests/Compete/Index/2763#4
-https://softuni.bg/trainings/resources/officedocument/57279/document-exercise-js-advanced-january-2021/3217
-https://softuni.bg/trainings/resources/officedocument/57276/presentation-js-advanced-january-2021/3217
+https://judge.softuni.bg/Contests/Practice/Index/2764#0
+https://softuni.bg/trainings/resources/officedocument/57282/lab-js-advanced-january-2021/3217
+https://softuni.bg/trainings/resources/officedocument/57281/presentation-js-advanced-january-2021/3217
 
 
 ALT+SHIFT+F - format code in VS code
