@@ -1,26 +1,46 @@
 function solve() {
-  const furnitureArray = JSON.parse(document.querySelector('textarea').value);
-  const output = document.querySelector('table.table tbody');
-  
+  const [input, output] = [...document.querySelectorAll('textarea')];
+  const table = document.querySelector('table.table tbody');
   const [generateBtn, buyBtn] = [...document.querySelectorAll('button')];
+
+  const furnitureArray = JSON.parse(input.value.toString().trim());
+
   generateBtn.addEventListener('click', () => {
-    // output.innerHTML = '';
-    furnitureArray.forEach(f => output.appendChild(createRow(f)));  
+    table.innerHTML = '';
+    furnitureArray.forEach(f => table.appendChild(createRow(f)));  
   });
-  furnitureArray.forEach(f => output.appendChild(createRow(f)));
+
+  buyBtn.addEventListener('click', () => {
+
+  });
 
   function createRow(data){
-    return e('tr', e('td','hi'));
+    const img = e('img');
+    img.src = data.img;
+
+    const check = e('input');
+    check.type = 'checkbox';
+
+    return e('tr',
+     e('td',img),
+     e('td',data.name),
+     e('td',data.price),
+     e('td',data.decFactor),
+     e('td',check)
+     );
   }
 
-  function e(type, content){
+  function e(type, ...content){
     const result = document.createElement(type);
     
-    if (typeof content =='string'){
-      result.textContent = content;
-    } else {
-      result.appendChild(content);
-    }
+    content.forEach(e => {
+      if (typeof e =='string'){
+        const nude = document.createTextNode(e);
+        result.appendChild(node);
+      } else {
+        result.appendChild(e);
+      }
+    });
     return result;
   }
 }
