@@ -4,6 +4,10 @@ function solve() {
     const onScreenBtn = [...formElements].slice(formElements.length-1)[0];
     const moviesUl = document.querySelector('#movies>ul');
 
+    function archive(e){
+        console.log('archive');
+    }
+
     function createMovie(e){
         e.preventDefault();
 
@@ -19,6 +23,31 @@ function solve() {
 
         const li = document.createElement('li');
 
+        const span = document.createElement('span');
+        span.textContent = name;
+        li.appendChild(span);
+
+        const strong = document.createElement('strong');
+        strong.textContent = `Hall: ${hall}`;
+        li.appendChild(strong);
+
+        const div = document.createElement('div');
+        const innerStrong = document.createElement('strong');
+        innerStrong.textContent = price;
+        const input = document.createElement('input');
+        input.setAttribute('placeholder', 'Ticket Sold');
+        const archiveBtn = document.createElement('archiveBtn');
+        archiveBtn.textContent = 'Archive';
+        archiveBtn.addEventListener('click', archive);
+
+
+        div.appendChild(innerStrong);
+        div.appendChild(input);
+        div.appendChild(archiveBtn);
+
+
+        li.appendChild(div);
+        
         moviesUl.appendChild(li);
     }
 
