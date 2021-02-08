@@ -1,11 +1,46 @@
 function solve() {
     const formElements = document.querySelector('#container').children;
-    const inputs = [...formElements].slice(0,formElements.length-1);
-    const onScreenBtn = [...formElements].slice(formElements.length-1)[0];
+    const inputs = Array.from(formElements).slice(0,formElements.length-1);
+    const onScreenBtn = Array.from(formElements).slice(formElements.length-1)[0];
     const moviesUl = document.querySelector('#movies>ul');
+    const archiveUl = document.querySelector('#archive>ul');
+    const clearBtn = document.querySelector('#archive>button');
+
+    function clear(e){
+        e.target.parentNode.children[1].innerHTML = '';
+    }
 
     function archive(e){
-        console.log('archive');
+        const div = e.target.parentNode;
+        const li = e.target.parentNode.parentNode;
+        const input = div.children[1];
+
+
+        if(!Number(input.value)) {return;}
+
+        const span = document.createElement('span');
+        const name = li.children[0].textContent;
+        span.textContent = name;
+
+        const strong = document.createElement('strong');
+        const price = +div.children[0].textContent;
+        console.log(price);
+        const totalPrice = price * Number(input.value);
+        strong.textContent = `Total amount: ${totalPrice.toFixed(2)}`;
+        
+        const deleteBtn = document.createElement('button');
+        deleteBtn.textContent = 'Delete';
+        deleteBtn.addEventListener('click', (e) => {
+            e.target.parentNode.remove();
+        });
+
+        const resultLi = document.createElement('li');
+        resultLi.appendChild(span);
+        resultLi.appendChild(strong);
+        resultLi.appendChild(deleteBtn);
+        
+        archiveUl.appendChild(resultLi);
+        li.remove();
     }
 
     function createMovie(e){
@@ -33,10 +68,10 @@ function solve() {
 
         const div = document.createElement('div');
         const innerStrong = document.createElement('strong');
-        innerStrong.textContent = price;
+        innerStrong.textContent = price.toFixed(2);
         const input = document.createElement('input');
         input.setAttribute('placeholder', 'Ticket Sold');
-        const archiveBtn = document.createElement('archiveBtn');
+        const archiveBtn = document.createElement('button');
         archiveBtn.textContent = 'Archive';
         archiveBtn.addEventListener('click', archive);
 
@@ -51,5 +86,6 @@ function solve() {
         moviesUl.appendChild(li);
     }
 
+    clearBtn.addEventListener('click', clear);
     onScreenBtn.addEventListener('click', createMovie);
 }
