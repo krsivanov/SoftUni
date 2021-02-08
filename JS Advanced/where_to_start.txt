@@ -9,7 +9,7 @@ https://discord.com/channels/796464328391393311/798168773605064774
 
 
 ://softuni.bg/trainings/resources/video/57468/video-29-january-2021-mihaela-petrova-js-advanced-january-2021/3217
-2:25:16
+0:00:00
 
 ://judge.softuni.bg/Contests/Compete/Index/2765#6
 ://softuni.bg/trainings/resources/officedocument/57283/document-exercise-js-advanced-january-2021/3217
