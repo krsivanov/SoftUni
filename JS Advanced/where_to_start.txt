@@ -26,3 +26,14 @@ CTRL + D - маркира елементи със същото име
 ctrl + alt + up/down - markira redove(nagore/nadolu)
 shift + alt + up/down - duplicate line 
 
+
+install testing :{
+	npm init -> y
+	npm install mocha
+	npm install chai
+
+	create launch.json
+	change ${file}
+	change tdd to bdd
+}
+
