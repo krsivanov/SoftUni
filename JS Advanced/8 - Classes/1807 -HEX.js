@@ -11,6 +11,6 @@ class Hex{
 
     toString() { return '0x' + this.value.toString(16).toUpperCase()}
 
-    parse(string) {return string.slice(2).toString(10)}
+    parse(string) {return parseInt(string, 16);}
 }
 
