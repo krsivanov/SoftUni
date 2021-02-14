@@ -3,17 +3,17 @@ https://softuni.bg/trainings/2286/html-css-mini-course#lesson-10930
 -------------------------------------------------------------------
 https://softuni.bg/trainings/3011/js-advanced-september-2020
 
-18/25
+20/25
 --------------------------------------------------------------------
 https://discord.com/channels/796464328391393311/798168773605064774
 
 
-https://softuni.bg/trainings/resources/video/57548/video-04-february-2021-viktor-kostadinov-js-advanced-january-2021/3217
+https://softuni.bg/trainings/resources/video/57697/video-08-february-2021-viktor-kostadinov-js-advanced-january-2021/3217
 0:13:53
 
-https://judge.softuni.bg/Contests/Practice/Index/2768#0
-https://softuni.bg/trainings/resources/officedocument/57374/lab-js-advanced-january-2021/3217
-https://softuni.bg/trainings/resources/officedocument/57373/presentation-js-advanced-january-2021/3217
+https://judge.softuni.bg/Contests/Practice/Index/2770#0
+https://softuni.bg/trainings/resources/officedocument/57290/lab-js-advanced-january-2021/3217
+https://softuni.bg/trainings/resources/officedocument/57289/presentation-js-advanced-january-2021/3217
 
 
 
