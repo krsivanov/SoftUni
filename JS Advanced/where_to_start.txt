@@ -8,8 +8,8 @@ https://softuni.bg/trainings/3011/js-advanced-september-2020
 https://discord.com/channels/796464328391393311/798168773605064774
 
 
-https://softuni.bg/trainings/resources/video/57697/video-08-february-2021-viktor-kostadinov-js-advanced-january-2021/3217
-2:55:30
+https://softuni.bg/trainings/resources/video/57820/video-12-february-2021-mihaela-petrova-js-advanced-january-2021/3217
+0:10:48
 
 https://judge.softuni.bg/Contests/Practice/Index/2770#0
 https://softuni.bg/trainings/resources/officedocument/57290/lab-js-advanced-january-2021/3217
@@ -24,6 +24,11 @@ CTRL + SHIFT + SPACE вътре във функцията, показва как
 CTRL + D - маркира елементи със същото име
 ctrl + alt + up/down - markira redove(nagore/nadolu)
 shift + alt + up/down - duplicate line 
+shif + alt + f - format code
+F2 - преименуване на променлива
+
+
+v launch dobavqme "outputCapture":"std" za da vyrvi dobre debugger-a
 
 
 install testing :{
@@ -36,3 +41,8 @@ install testing :{
 	change tdd to bdd
 }
 
+
+npm install mocha -> npm install chai -> (module.exports = pizzaUni;)
+ -> *.test.js (fail s testovete (const {expect, assert} = require('chai');
+								const pizzUni = require('./pizza place');
+ )
