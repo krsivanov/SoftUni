@@ -90,6 +90,10 @@ function solve() {
         if (e.target.tagName === 'BUTTON') {
             if (!e.target.classList.contains('red')){
                 add(e)
+
+                Object.defineProperties(state).forEach(([name, module]) =>{
+                    modulesOutput.appendChild(module.module)
+                })
             } else {
                 del(e);
             }
