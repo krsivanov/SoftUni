@@ -3,7 +3,7 @@ function e(type, attributes = {}, ...content){
 
     for (let attr in attributes) {
         if (attr.substring(0,2) == 'on') {
-            result.addEventListener(attr.toLowerCase(),attributes[attr]);
+            result.addEventListener(attr.substing(2).toLowerCase(),attributes[attr]);
         } else {
             result[attr] = attributes[attr];
         }
