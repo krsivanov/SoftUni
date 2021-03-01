@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 https://softuni.bg/trainings/3218/js-applications-february-2021
-5/25
+6/25
 
 
 
@@ -9,8 +9,13 @@ https://softuni.bg/trainings/resources/officedocument/58169/guide-remote-databas
 
 -----------------------------------------------------------------------------------------
 https://softuni.bg/trainings/resources/officedocument/58163/lab-js-applications-february-2021/3218
+---------------------------------------------------------------------------------------------
 
-https://softuni.bg/trainings/resources/video/58226/video-23-february-2021-viktor-kostadinov-js-applications-february-2021/3218
+
+
+
+
+
 1.15.14
 
 
