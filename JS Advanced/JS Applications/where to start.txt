@@ -22,7 +22,7 @@ https://softuni.bg/trainings/resources/officedocument/58245/lab-js-applications-
 
 https://softuni.bg/trainings/resources/officedocument/58247/dokument-exercise-js-applications-february-2021/3218
 https://softuni.bg/trainings/resources/video/58415/video-02-march-2021-viktor-kostadinov-js-applications-february-2021/3218
-    3.20.05
+    0.28.07
 
 
 
