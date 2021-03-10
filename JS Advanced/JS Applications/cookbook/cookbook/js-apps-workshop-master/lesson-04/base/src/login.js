@@ -1,4 +1,4 @@
-const form = document.querySelector('form');
+/* const form = document.querySelector('form');
 
 form.addEventListener('submit', (ev => {
     ev.preventDefault();
@@ -30,4 +30,19 @@ async function onSubmit(data) {
     } catch (err) {
         console.error(err.message);
     }
+} */
+
+let main;
+let section;
+
+export function setupLogin(mainTarget, sectionTarget) {
+    main = mainTarget;
+    section = sectionTarget;
+}
+
+export function showLogin() {
+    main.innerHTML = '';
+    main.appendChild(section);
+
+
 }
