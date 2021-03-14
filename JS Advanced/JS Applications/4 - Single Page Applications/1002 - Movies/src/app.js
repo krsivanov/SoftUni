@@ -1,15 +1,49 @@
-import { setupHome } from "./home.js";
+import { setupHome, showHome } from "./home.js";
 import { setupDetails } from "./details.js";
-import { setupLogin } from "./login.js";
-import { setupRegister } from "./register.js";
-import { setupCreate } from "./create.js";
+import { setupLogin, showLogin } from "./login.js";
+import { setupRegister, showRegister } from "./register.js";
+import { setupCreate, showCreate } from "./create.js";
 import { setupEdit } from "./edit.js";
 
 const main = document.querySelector('main');
 
-setupSection('home-page',setupHome);
+const links = {
+    'homeLink': showHome,
+    'loginLink': showLogin,
+    'registerLink': showRegister,
+    'createLink': showCreate
+};
 
-function setupSection(sectionId, setup){
-    const section = document.getElementById(section);
+setupSection('home-page', setupHome);
+setupSection('add-movie', setupCreate);
+setupSection('movie-details', setupDetails);
+setupSection('edit-movie', setupEdit);
+setupSection('form-login', setupLogin);
+setupSection('form-sign-up', setupRegister);
+
+setupNavigation();
+
+//start navigation in home view
+showHome();
+
+function setupSection(sectionId, setup) {
+    const section = document.getElementById(sectionId);
     setup(main, section)
+}
+
+function setupNavigation() {
+    document.querySelector('nav').addEventListener('click', (event => {
+        const view = links[event.target.id];
+        if (typeof view == 'function') {
+            event.preventDefault();
+            view();
+        }
+
+    }));
+
+    document.getElementById('createLink').addEventListener('click', (event) => {
+        event.preventDefault();
+        showCreate();
+    });
+    
 }
