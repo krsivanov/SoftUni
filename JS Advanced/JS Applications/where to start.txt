@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 https://softuni.bg/trainings/3218/js-applications-february-2021
-9/25
+12/25
 
 
 
@@ -17,12 +17,11 @@ https://softuni.bg/trainings/resources/officedocument/58163/lab-js-applications-
 https://softuni.bg/trainings/3218/js-applications-february-2021#lesson-21844
 
 
-https://softuni.bg/trainings/resources/officedocument/58171/prezentaciya-js-applications-february-2021/3218
-https://softuni.bg/trainings/resources/officedocument/58245/lab-js-applications-february-2021/3218
+https://softuni.bg/trainings/resources/officedocument/58173/prezentaciya-js-applications-february-2021/3218
+https://softuni.bg/trainings/resources/officedocument/58565/lab-js-applications-february-2021/3218
 
-https://softuni.bg/trainings/resources/video/58551/video-04-march-2021-viktor-kostadinov-js-applications-february-2021/3218
-    2.04.47
-https://softuni.bg/trainings/3218/js-applications-february-2021
+https://softuni.bg/trainings/resources/video/58626/video-08-march-2021-viktor-kostadinov-js-applications-february-2021/3218
+    0.00.00
 
 
 
