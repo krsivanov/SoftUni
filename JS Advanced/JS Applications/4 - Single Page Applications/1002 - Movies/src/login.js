@@ -18,8 +18,9 @@ async function onSubmit(event) {
             sessionStorage.setItem('userId', data._id);
             sessionStorage.setItem('email', data.email);
 
-            [...document.querySelectorAll('nav .user')].forEach(l => l.getElementsByClassName.display = 'block');
-            [...document.querySelectorAll('nav .guest')].forEach(l => l.getElementsByClassName.display = 'none');
+            document.getElementById('welcome-msg').textContent = `Welcome, ${email}`;
+            [...document.querySelectorAll('nav .user')].forEach(l => l.style.display = 'block');
+            [...document.querySelectorAll('nav .guest')].forEach(l => l.style.display = 'none');
 
             showHome();
         }
