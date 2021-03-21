@@ -17,6 +17,11 @@ https://softuni.bg/trainings/resources/officedocument/58163/lab-js-applications-
 https://softuni.bg/trainings/3218/js-applications-february-2021#lesson-21844
 
 
+
+
+npm install --save-dev playwright-chromium
+
+
 https://softuni.bg/trainings/resources/officedocument/58173/prezentaciya-js-applications-february-2021/3218
 https://softuni.bg/trainings/resources/officedocument/58565/lab-js-applications-february-2021/3218
 
