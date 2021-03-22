@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 https://softuni.bg/trainings/3218/js-applications-february-2021
-12/25
+14/25
 
 
 
@@ -22,11 +22,10 @@ https://softuni.bg/trainings/3218/js-applications-february-2021#lesson-21844
 npm install --save-dev playwright-chromium
 
 
-https://softuni.bg/trainings/resources/officedocument/58173/prezentaciya-js-applications-february-2021/3218
-https://softuni.bg/trainings/resources/officedocument/58565/lab-js-applications-february-2021/3218
 
-https://softuni.bg/trainings/resources/video/58626/video-08-march-2021-viktor-kostadinov-js-applications-february-2021/3218
-    0.00.00
+https://softuni.bg/trainings/resources/officedocument/58568/dokument-exercise-js-applications-february-2021/3218
+https://www.youtube.com/watch?v=MnD9CdiKrAw&t=158s&ab_channel=PTS1337
+	1.17.20
 
 ---------------------------------------------------------------
 https://softuni.bg/trainings/resources/video/58673/video-11-march-2021-viktor-kostadinov-js-applications-february-2021/3218
@@ -38,19 +37,22 @@ https://softuni.bg/trainings/resources/officedocument/58174/prezentaciya-js-appl
 
 
 
+For Exam:
+1.npm install
+then run in two separate terminals the following commands:
+2.npm run start
+3.npm run test
 
 
+install testing :{
+	npm init -> y
+	npm install mocha
+	npm install chai
 
-
-
-
-
-
-
-
-
-
-
+	create launch.json
+	change ${file}
+	change tdd to bdd
+}
 
 
 ----------------------------------------
