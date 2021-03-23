@@ -10,7 +10,7 @@ import { setupCreate } from "./views/create.js";
 //show appropriate navigation based on user session
 // start application in default view -> home
 const main = document.querySelector('main');
-const nav = document.querySelector('nav');  
+const nav = document.querySelector('nav');
 
 const views = {};
 const links = {};
@@ -30,7 +30,7 @@ setupNavigation();
 //start app in home view
 goTo('home');
 
-function registerView (name, section, setup, linkId) {
+function registerView(name, section, setup, linkId) {
     const view = setup(section, navigation);
     views[name] = view;
     if (linkId) {
@@ -39,7 +39,7 @@ function registerView (name, section, setup, linkId) {
 
 }
 
-async function goTo(name, ...params){
+async function goTo(name, ...params) {
     main.innerHTML = '';
     const view = views[name];
     const section = await view(...params)
@@ -60,11 +60,11 @@ function setupNavigation() {
 
 function setUserNav() {
     const token = sessionStorage.getItem('authToken');
-    if (token !=null) {
-        [...nav.querySelectorAll('.user-nav')].forEach(e => styleMedia.display = 'list-item');
-        [...nav.querySelectorAll('.guest-nav')].forEach(e => styleMedia.display = 'none');
+    if (token != null) {
+        [...nav.querySelectorAll('.user-nav')].forEach(e => e.style.display = 'list-item');
+        [...nav.querySelectorAll('.guest-nav')].forEach(e => e.style.display = 'none');
     } else {
-        [...nav.querySelectorAll('.user-nav')].forEach(e => styleMedia.display = 'none');
-        [...nav.querySelectorAll('.guest-nav')].forEach(e => styleMedia.display = 'list-item ');
+        [...nav.querySelectorAll('.user-nav')].forEach(e => e.style.display = 'none');
+        [...nav.querySelectorAll('.guest-nav')].forEach(e => e.style.display = 'list-item ');
     }
 }
