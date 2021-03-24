@@ -16,7 +16,8 @@ const views = {};
 const links = {};
 
 const navigation = {
-    goTo
+    goTo,
+    setUserNav
 };
 
 registerView('home', document.getElementById('home-page'), setupHome, 'homeLink');
@@ -25,6 +26,7 @@ registerView('register', document.getElementById('register-page'), setupRegister
 registerView('dashboard', document.getElementById('dashboard-holder'), setupDashboard, 'dashboardLink');
 registerView('create', document.getElementById('create-page'), setupCreate, 'createLink');
 registerView('details', document.getElementById('details-page'), setupDetails);
+document.getElementById('views').remove();
 
 setupNavigation();
 //start app in home view
@@ -42,7 +44,7 @@ function registerView(name, section, setup, linkId) {
 async function goTo(name, ...params) {
     main.innerHTML = '';
     const view = views[name];
-    const section = await view(...params)
+    const section = await view(...params);
     main.appendChild(section);
 }
 
@@ -60,6 +62,7 @@ function setupNavigation() {
 
 function setUserNav() {
     const token = sessionStorage.getItem('authToken');
+    console.log(token);
     if (token != null) {
         [...nav.querySelectorAll('.user-nav')].forEach(e => e.style.display = 'list-item');
         [...nav.querySelectorAll('.guest-nav')].forEach(e => e.style.display = 'none');

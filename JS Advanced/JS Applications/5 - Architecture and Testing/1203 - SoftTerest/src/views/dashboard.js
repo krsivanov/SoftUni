@@ -2,7 +2,7 @@ import { e } from "../dom.js";
 import { getIdeas } from "../api/data.js";
 
 function createIdeaPreview(idea) {
-    const element = e('div', { className: 'card overflow-hidden current-card details' });
+    const element = e('div', {className: 'card overflow-hidden current-card details'});
     element.style.width = '20rem';
     element.style.height = '18rem';
     element.innerHTML = `
@@ -10,12 +10,20 @@ function createIdeaPreview(idea) {
         <p class="card-text">${idea.title}</p>
     </div>
     <img class="card-image" src="${idea.img}" alt="Card image cap">
-    <a class="btn" href="">Details</a>`;
+    <a id="${idea._id}" class="btn" href="">Details</a>`;
 
     return element;
 }
 
 export function setupDashboard(section, navigation) {
+    section.addEventListener('click', ev =>{
+        if(ev.target.classList.contains('btn')) {
+            ev.preventDefault();
+            const ideaId = ev.target.id;
+            navigation.goTo('details', ideaId);
+        }
+    });
+
     return showDashboard;
 
     async function showDashboard() {
