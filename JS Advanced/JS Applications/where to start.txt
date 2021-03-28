@@ -24,11 +24,11 @@ npm install --save-dev playwright-chromium
 
 
 
-https://softuni.bg/trainings/resources/video/58673/video-11-march-2021-viktor-kostadinov-js-applications-february-2021/3218
-	0.55.00
+https://www.youtube.com/watch?v=1dnEODLjZBE&t=3s
+	0.37.00
 
-https://softuni.bg/trainings/resources/officedocument/58570/lab-js-applications-february-2021/3218
-https://softuni.bg/trainings/resources/officedocument/58174/prezentaciya-js-applications-february-2021/3218
+https://softuni.bg/trainings/resources/officedocument/58175/prezentaciya-js-applications-february-2021/3218
+
 
 
 
