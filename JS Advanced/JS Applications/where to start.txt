@@ -24,11 +24,16 @@ npm install --save-dev playwright-chromium
 
 
 
+<<<<<<< HEAD
 https://www.youtube.com/watch?v=V0v6NTKQYRY&t=1s&ab_channel=SoftwareUniversity%28SoftUni%29
 	3.11.40
+=======
+https://www.youtube.com/watch?v=1dnEODLjZBE&t=3s
+	0.37.00
 
-https://softuni.bg/trainings/resources/officedocument/58570/lab-js-applications-february-2021/3218
-https://softuni.bg/trainings/resources/officedocument/58174/prezentaciya-js-applications-february-2021/3218
+https://softuni.bg/trainings/resources/officedocument/58175/prezentaciya-js-applications-february-2021/3218
+>>>>>>> b76b1dc19fc429e393f76194308ed5ec1ac37b1d
+
 
 
 
