@@ -1,0 +1,12 @@
+1. Extract project skeleton and examine files
+2. Setup NPM project (package.json+libraries)
+3. Analyze the HTML and determine templates
+4. npm init
+5. npm install (moje i samo "i") --save (ili "-E") page lit-HTML (startirane na lite-server)
+6. Configure routing with placeholder modules
+7. Implement requests
+8. Implement each view
+8.1. Create static templates
+8.2. Implement fetch requests
+8.3. Add parameters to templates
+8.4. Add event listener(if any)
