@@ -25,7 +25,7 @@ npm install --save-dev playwright-chromium
 
 =======
 https://www.youtube.com/watch?v=6mJaChZPR6g&t=1s&ab_channel=SoftwareUniversity%28SoftUni%29
-	2.20.29
+	3.04.01
 
 https://softuni.bg/trainings/resources/officedocument/58684/dokument-exercise-js-applications-february-2021/3218
 

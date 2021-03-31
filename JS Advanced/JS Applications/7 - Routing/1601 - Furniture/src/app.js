@@ -1,6 +1,7 @@
 import page from '../node_modules/page/page.mjs'
 import { render } from "../node_modules/lit-html/lit-html.js";
 
+import { logout } from "./api/data.js";
 import { dashboardPage } from "./views/dashboard.js";
 import { createPage } from "./views/create.js";
 import { detailsPage } from "./views/details.js";
@@ -9,9 +10,6 @@ import { registerPage } from "./views/register.js";
 import { loginPage } from "./views/login.js";
 import { myPage } from "./views/myFurniture.js";
 
-import * as api from './api/data.js'
-
-window.api = api
 
 const main = document.querySelector('.container');
 
@@ -24,7 +22,11 @@ page('/edit/:id', decorateContext, editPage);
 page('/register', decorateContext, registerPage);
 page('/login', decorateContext, loginPage);
 
-document.getElementById()
+document.getElementById('logoutBtn').addEventListener('click', async () => {
+    await logout();
+    setUserNav();
+    page.redirect('/');
+});
 
 setUserNav();
 
