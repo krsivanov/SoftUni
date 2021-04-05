@@ -1,0 +1,79 @@
+1. npm install (instalira dependasita)
+2. npm run start (startira prilojenieto(servera))
+3. npm run test (startira testovete)
+4. kopirame api/api.js 
+5. dobavqme v index.html - app.js (--->   <scrip src="/src/app.js" type="module">  vyv head-a)
+6. importirame modulite koito shte polzvame :  --->  import page from "../../node_modules/page/page.mjs";
+                                                import { render } from "../../node_modules/lit-html/lit-html.js";
+7. hvashtame elementa, v koito shte rendvame - ex:  const main = document.querySelector('main');
+8. syzdavame routing tablica (page). ex: --->    page('/', decorateContext, homePage);
+                                            page.start();
+9. v src pravim papka view i vytre pravim home.js
+10. v home.js importirame lit-html : --->   import { html } from "../../node_modules/lit-html/lit-html.js";
+11. construirame templeta za syotvetnata stranica (home.js) : --->    const homeTemplate = () => html``;
+12. ako ima butoni im dobavqme routin - ex: --->      <a href="/login" class="button">Login</a>
+13. konstruirame funkciqta koqto shte exportirame kym app.js - ex: --->  export async function homePage(ctx) {ctx.render(homeTemplate());}
+14. v app.js konstruirame func. middleware, v koito slagame utility funkciite - ex:--->    function decorateContext(ctx, next) {ctx.render = (content) => render(content, main); next();}
+15. v index.html ograjdame v div sample-te koito idvat nagotov za da gi skriem : --->    <div id="views" style="display: none;">
+16. pravim navigaciqta v app.js syzdavame func. : --->      function setUserNav() {const token = sessionStorage.getItem('authToken');
+    if (token != null) {document.querySelector('.user').style.display = '';document.querySelector('.guest').style.display = 'none';} 
+    else {document.querySelector('.user').style.display = 'none';document.querySelector('.guest').style.display = '';}}
+17. dobavqme funkciqta:  setUserNav();   v app.js sled const main.
+18. dobavqme setUserNav v ctx kato vyv func. decorateContext dobavqme : --->        ctx.setUserNav = setUserNav;
+19. vyv views pravim login.js i importirame lit-html
+20. pravim loginTemplate = (onSubmit) => html``
+21. pravim func. loginPage()
+22. v app.js page - zakachame za route-a :--->		 page('/login', decorateContext, loginPage);
+23. v index.html navigation  na anchor-ite postavqme v href-a pytishtata route-vete ex:	
+													--->       <a href="/create">Create Meme</a>
+24. a na anchor - logout :  --->        <a id="logoutBtn" href="javascript:void(0)">Logout</a>
+25. pravime func. onSubmit v login.js 
+26. vyv loginTemplate dobavqme eventa -  --->  <form @submit = ${onSubmit} id="login-form">
+27. ako v loginTemplate imame linkcheta im dobavqme route
+28. syzdavame data.js i importirame :  --->  import * as api from "./api.js";
+29. v data.js setvame localhost : ---> api.settings.host = 'http://localhost:3030';
+30. v data.js exportvame funciite login, register i logout : ---> export const login = api.login;
+31. vyv func. onSubmit(event) dobavqme : --->  event.preventDefault();
+32. v onSubmit construirame forma za login : --->   const formData = new FormData(event.target); const email = formData.get('email').trim(); const password = formData.get('password').trim();
+33. v onSubmit vikame zaqvka za login s func. login : --->  await login(email,password);    i dobavqme:   --->   ctx.setUserNav();      za da aktualizirame navigaciqta
+34. v onSubmit redirectvame kato dobavim func.  --->       ctx.page.redirect('/catalog');
+35. promenihme v setUserNav vmesto token izpolzvame email, za da moje da izpolzvame za navigaciqta
+36. v setUserNav(navigaciqta) dobavqme nadpisa za lognat potrebitel:   --->document.querySelector('div.profile > span').textContent = `Welcome, ${email}`;
+37. vyv papka view pravim register.js i importirame nujnite moduli 
+38. konstruirame: --->  registerTemplate(onSubmit) =>html``;
+39. vyv registerTemplate form dobavqme @submit : --->         <form  @submit=${onSubmit} id="register-form">
+40. syzdavame func. onSubmit kato razlikata s login e che tuk trqbva da ima validaciq : --->      
+                            if (!username || !email || !password || !repeatPass || !gender) {return alert('All fields are required!');}
+                            if (password != repeatPass) {return alert('Passwords don\'t match!');}
+41. registirame register v routing tablicata v app.js : --->     page('/register', decorateContext, registerPage);
+42. tyi kato imame razlika v uslovieto na tazi zadacha s predhodnite trqbva vyv func. register v api.js da dobavim i drugi promenlivi : (usernam, email, password, gender)
+43. v register.js dobavqme : --->   ctx.setUserNav();ctx.page.redirect('/catalog');
+44. dobavqme event listener na logoutBtn : --->     document.getElementById('logoutBtn').addEventListener('click', logout);
+45. syzdavame func. logout : --->       async function logout() {await apiLogout();setUserNav();page.redirect('/');}
+46. syzdavame catalog.js v papka views i importirame lit-html vytre
+47. v data.js syzdavame specifichnite funkcii koito pravqt zaqvkite
+48. v catalog.js konstruirame catalogTemplate : --->    	const catalogTemplate = (memes) => html``;
+49. konstruirame memeTemplate, koito shte render-ne nashite meme-ta. : --->     const memeTemplate = (meme) => html``;
+50. exportirame view kontrolera : --->      export async function catalogPage(ctx) {const memes = await getMemes();ctx.render(catalogTemplate(memes));}
+51. v app.js dobavqme route-ra na catalog : --->     page('/catalog', decorateContext, catalogPage);
+52. pravim ternaren operator v catalogTemplate, koito da vizualizira memetata ili da izpishe syobshtenie ako nqma takiva v bazata danni
+53. syzdavame vyv papka view create.js
+54. v data.js syzdavame zaqvka za nashiqt nov route : --->    export async function createMeme(){return await api.post(host + '/data/memes',meme);}
+55. konstruirame createTemplate : --->      const createTemplate = (onSubmit) => html``;
+56. dobavqme @submit v templeta : --->          <form @submit=${onSubmit} id="create-form">
+57. exportirame view controlera : --->          export async function createPage(ctx) {ctx.render(createTemplate(onSubmit));
+        async function onSubmit(event) {event.preventDefault();const formData = new FormData(event.target);const title = formData.get('title').trim();const description = formData.get('description').trim();const imageUrl = formData.get('imageUrl').trim();
+        if (!title || !description || !imageUrl) {return alert('All fields are required!')}
+        await createMeme({title,description,imageUrl});ctx.page.redirect('/catalog')}}
+58. zakachame v app.js create za negoviq route : --->   page('/create',decorateContext, createPage);
+59. syzdavame details.js vyv papka views i vytre importirame lit-html i getMemeById ot data.js
+60. v data.js syzdavame getMemeById: ---> export async function getMemeById(id) {return await api.get(host + '/data/memes/' + id);}
+61. v details.js syzdavame : --->     const detailsTemplate = (meme) => html``;
+62. exportvame funkciqta koqto igrae rolqta na view controler : --->   export async function detailsPage(ctx) {const userId = sessionStorage.getItem('userId');const memeId = ctx.params.id;const meme = await getMemeById(memeId);const isOwner = userId === meme._ownerId;ctx.render(detailsTemplate(meme, isOwner));}
+63. dobavame v app.js routa : --->          page('/details/:id',decorateContext, detailsPage);
+64. syzdavame edit.js i importirame nujnoto
+65. v data.js syzdavame funckiqta : export async function updateMeme(id, meme) {return await api.put(host + '/data/memes/' + id, meme);}
+
+vsichko e opisano do 2.19.08 
+
+videoto e izgledano do 3.07.00
