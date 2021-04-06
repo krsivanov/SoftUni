@@ -42,3 +42,5 @@ npm install mocha -> npm install chai -> (module.exports = pizzaUni;)
  -> *.test.js (fail s testovete (const {expect, assert} = require('chai');
 								const pizzUni = require('./pizza place');
  )
+
+mocha pizzauni.test.js
