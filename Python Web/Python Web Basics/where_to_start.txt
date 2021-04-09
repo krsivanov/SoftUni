@@ -1,1 +1,10 @@
 https://softuni.bg/trainings/3019/python-web-basics-september-2020
+
+
+
+
+
+
+how to setup django project in pycharm comunity version :
+    https://www.pragmaticlinux.com/2020/09/setup-and-debug-a-django-app-in-pycharm-community-edition/
+    https://automationpanda.com/2017/09/14/django-projects-in-pycharm-community-edition/
