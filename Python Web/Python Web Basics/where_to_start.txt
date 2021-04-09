@@ -1,9 +1,16 @@
 https://softuni.bg/trainings/3019/python-web-basics-september-2020
 
+https://www.youtube.com/watch?v=4LaqF7iVG88&t=763s
+    0.30.00
+
+https://softuni.bg/trainings/resources/officedocument/52544/introduction-to-django-pptx-python-web-basics-september-2020/3019
 
 
 
 
+database jetbrains :
+    https://www.jetbrains.com/datagrip/download/#section=windows
+    
 
 how to setup django project in pycharm comunity version :
     https://www.pragmaticlinux.com/2020/09/setup-and-debug-a-django-app-in-pycharm-community-edition/
