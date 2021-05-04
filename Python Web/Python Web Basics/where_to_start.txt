@@ -17,5 +17,10 @@ database jetbrains :
 how to setup django project in pycharm comunity version :
     https://www.pragmaticlinux.com/2020/09/setup-and-debug-a-django-app-in-pycharm-community-edition/
     https://automationpanda.com/2017/09/14/django-projects-in-pycharm-community-edition/
+
+
+    create django project:
     https://stackoverflow.com/questions/23870365/how-to-set-up-a-django-project-in-pycharm
 
+    set templates folder for django project:
+    https://www.pluralsight.com/guides/introduction-to-django-templates
