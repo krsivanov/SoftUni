@@ -1,1 +1,8 @@
 https://softuni.bg/trainings/3019/python-web-basics-september-2020
+
+
+https://www.youtube.com/watch?v=4LaqF7iVG88&t=894s&ab_channel=SoftwareUniversity%28SoftUni%29
+0.41.47
+
+
+https://stackoverflow.com/questions/23870365/how-to-set-up-a-django-project-in-pycharm
