@@ -1,9 +1,10 @@
 https://softuni.bg/trainings/3019/python-web-basics-september-2020
 
-https://www.youtube.com/watch?v=4LaqF7iVG88&t=763s
-    0.49.34
+https://info.exmo.com/en/cryptocurrency/bittorrent-token-btt/
+0.12.54
 
-https://softuni.bg/trainings/resources/officedocument/52544/introduction-to-django-pptx-python-web-basics-september-2020/3019
+https://softuni.bg/trainings/resources/officedocument/52545/url-s-and-templates-pptx-python-web-basics-september-2020/3019
+https://softuni.bg/trainings/resources/officedocument/52546/url-s-and-templates-lab-python-web-basics-september-2020/3019
 
 
 
