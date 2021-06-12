@@ -1,0 +1,4 @@
+
+
+----------
+- пускаме manage.py terminala (Tools -> Run manage.py)/(ctr+alt+R)
