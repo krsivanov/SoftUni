@@ -1,11 +1,19 @@
 https://softuni.bg/trainings/3019/python-web-basics-september-2020
 
+<<<<<<< HEAD
 
 =======
 https://www.youtube.com/watch?v=4LaqF7iVG88&t=763s
     1.01.22
 
 https://softuni.bg/trainings/resources/officedocument/52544/introduction-to-django-pptx-python-web-basics-september-2020/3019
+=======
+https://info.exmo.com/en/cryptocurrency/bittorrent-token-btt/
+0.12.54
+
+https://softuni.bg/trainings/resources/officedocument/52545/url-s-and-templates-pptx-python-web-basics-september-2020/3019
+https://softuni.bg/trainings/resources/officedocument/52546/url-s-and-templates-lab-python-web-basics-september-2020/3019
+>>>>>>> 0b3498081c8c1d0a1bd8b856dce4a442db65805f
 
 
 
@@ -17,6 +25,7 @@ database jetbrains :
 how to setup django project in pycharm comunity version :
     https://www.pragmaticlinux.com/2020/09/setup-and-debug-a-django-app-in-pycharm-community-edition/
     https://automationpanda.com/2017/09/14/django-projects-in-pycharm-community-edition/
+<<<<<<< HEAD
 
 
     create django project:
@@ -32,3 +41,5 @@ ctr+alt+R - runs manage.py shell on PyCharm Pro Version
 
 
 https://alicecampkin.medium.com/setting-up-a-forked-django-project-53d5939b7e9e
+=======
+>>>>>>> 0b3498081c8c1d0a1bd8b856dce4a442db65805f

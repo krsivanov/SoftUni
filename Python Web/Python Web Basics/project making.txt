@@ -1,0 +1,16 @@
+
+
+----------
+- пускаме manage.py terminala (Tools -> Run manage.py)/(ctr+alt+R)
+- в manage.py terminal пишем : startapp <name of the app>
+- преместваме папката на малкия app в папката на големия app
+- в папката на малкия app правим файл url.py в него правим urlpatterns = []
+- в url.py на големия app добавяме : path('', include('<big app>.<little app>.urls')), 
+- 
+
+
+
+
+PyCharm Community Edition:
+-----------------------------------------------------------------------
+https://automationpanda.com/2017/09/14/django-projects-in-pycharm-community-edition/
