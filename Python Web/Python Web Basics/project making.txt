@@ -6,7 +6,7 @@
 - преместваме папката на малкия app в папката на големия app
 - в папката на малкия app правим файл url.py в него правим urlpatterns = []
 - в url.py на големия app добавяме : path('', include('<big app>.<little app>.urls')), 
-- 
+- в setting.py , INSTALLLED_APPS добавяме нашият app :  '<big app>.<little app>
 
 
 
