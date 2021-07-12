@@ -3,11 +3,30 @@
 ----------
 - пускаме manage.py terminala (Tools -> Run manage.py)/(ctr+alt+R)
 - в manage.py terminal пишем : startapp <name of the app>
-- преместваме папката на малкия app в папката на големия app
-- в папката на малкия app правим файл url.py в него правим urlpatterns = []
-- в url.py на големия app добавяме : path('', include('<big app>.<little app>.urls')), 
+- преместваме папката на малкия app в папката на големия 
 - в setting.py , INSTALLLED_APPS добавяме нашият app :  '<big app>.<little app>
+- в папката на малкия app правим файл url.py в него правим urlpatterns = []
+- в url.py на големия app добавяме : path('', include('<big app>.<little app>.urls')),
+- нагласяме DB : database -> + -> Data Source -> PostgreSQL
+- десен бутон -> new database , за да направим нашата база данни
+- в setting.py намираме DATABASe и променяме найстройките да са за Postgres (линка в коментара на DATABASE)
+- в терминала инсталираме psycopg  : pip install psycopg2-binary
+- в manage.py правим миграциите : migrate
+- правим модела , след това в manage.py : makemigrations
+- правим forms.py в малкия app и в него правим формите (from django import forms///class BookForm(forms.ModelForm):///class Meta:///model = Book///fields = '__all__')
+-
 
+- за да насторим статичните данни в settings.py намираме STATIC_URL. Под него добавяме STATICFILES_DIRS = (
+    BASE_DIR / 'static'
+
+) 
+
+- за всеки темплейт добаваме:   {% csrf_token %}
+                                {{ form }}
+- във <form
+                            
+                            
+1.50.59
 
 
 
