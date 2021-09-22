@@ -1,8 +1,8 @@
 https://softuni.bg/trainings/3180/python-web-framework-november-2020
 
-https://softuni.bg/trainings/resources/video/62425/video-05-july-2021-doncho-minkov-python-web-framework-july-2021/3356
+https://www.youtube.com/watch?v=z_YA-HAeqH8&t=11s&ab_channel=SoftwareUniversity%28SoftUni%29
 
-1.17.36
+1.44.34
 
 
 --------------------------------------
